@@ -14,7 +14,7 @@
 /// otorgarles un estado inicial o definirse en una sola
 /// sentencia.
 func main() {
-  
+
   // constante string
   let welcomMessage: String = "Welcome to the Swift Language Programming!"
   print(welcomMessage)
