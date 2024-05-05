@@ -8,7 +8,7 @@
 func main() {
 
   // entero sin singo
-  let someInt: UInt8 = 1
+  let someInt : UInt8 = 1
   var otherInt: UInt64 = UInt64(someInt)
   print("otherInt: \(otherInt) with type:", type(of: otherInt))
 

@@ -18,6 +18,7 @@ func main() {
 
 /// Uso de tuplas
 func showExample01() {
+
   // tupla normal
   let http404Error: (Int, String) = (404, "Not Found")
   print("http404Error: \(http404Error), with type: \(type(of: http404Error))")
@@ -33,8 +34,10 @@ func showExample01() {
 
 /// uso de tuplas con nombre
 func showExample02() {
+
+  // named tuple
   let http200Status = (statusCode: 200, description: "OK")
-  print(type(of: http200Status))
+  print("http200Status: \(http200Status) with type \(type(of: http200Status))")
 }
 
 // Run application
