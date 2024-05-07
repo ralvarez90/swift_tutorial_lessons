@@ -34,7 +34,7 @@ func main() {
 
   // end message
   defer {
-    print("\nPress any key to continue . . . ")
+    print("\nPress any key to continue . . . ", terminator: "")
     let _ = readLine()
   }
 
