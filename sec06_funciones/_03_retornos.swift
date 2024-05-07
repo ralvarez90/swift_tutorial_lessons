@@ -2,7 +2,7 @@
 ///
 /// Las funciones y métodos pueden regresar ninguno, uno o más
 /// valores por medio de tuplas.
-/// 
+///
 /// Los valores que se retornan por una función pueden ser
 /// ignorados asignadolos a un elemento _.
 func main() {
@@ -41,10 +41,9 @@ func minMax(array: [Int]) -> (min: Int, max: Int) {
   return (currentMin, currentMax)
 }
 
-
 /// Imprime mensaje de saludo. Implícitamente retorna
 /// un Void
-func sayHelloWorld() -> Void {
+func sayHelloWorld() {
   print("Hello World!")
 }
 
@@ -56,6 +55,6 @@ func printAndCount(string: String) -> Int {
 }
 
 /// Imprime mensaje sin retornarn su longitud.
-func printWithoutCounting(string: String) -> Void {
+func printWithoutCounting(string: String) {
   let _ = printAndCount(string: string)
 }

@@ -12,7 +12,7 @@
 /// }
 /// todo: agregar ejemplos
 func main() {
-    print("Hello World!")
+  print("Hello World!")
 }
 
 /// Run application
