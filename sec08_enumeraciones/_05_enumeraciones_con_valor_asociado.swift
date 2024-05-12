@@ -31,6 +31,8 @@ func main() {
   // create item of enumeration
   var productBarCode: BarCode = BarCode.upc(8, 85909, 51226, 3)
   productBarCode = .qrCode("ABCDEFGHIJKLM")
+
+  // switching item
   switch productBarCode {
   case .upc(let numberSystem, let manufacturer, let product, let check):
     print("UPC: \(numberSystem), \(manufacturer), \(product), \(check)")

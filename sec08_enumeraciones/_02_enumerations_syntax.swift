@@ -32,6 +32,9 @@ func main() {
 
   let myPlanet: Planet = Planet.earth
   print("myPlanet variable is: \(myPlanet), with type: \(type(of: myPlanet))")
+
+  let otherPlanet: Planet = .venus
+  print("otherPlante variable is: \(otherPlanet), with type: \(type(of: otherPlanet))")
 }
 
 // Run application

@@ -44,12 +44,19 @@ func main() {
     case mercury = 1
     case venus, earth, mars, jupiter, saturn, uranus, neptune
   }
-  print(Planet.earth)
 
+  // show planets
+  print("Planet.mercury: \(Planet.mercury)")
+  print("Planet.earth  : \(Planet.earth)")
+
+  // other enum with String raw values
   enum CompassPoint: String {
     case north, south, east, weast
   }
-  print(CompassPoint.north)
+
+  // show points
+  print("CompassPoint.north: \(CompassPoint.north)")
+  print("CompassPoint.south: \(CompassPoint.south)")
 }
 
 // Run application
