@@ -13,18 +13,22 @@ func main() {
     let _ = readLine()
   }
 
-  // create struct
+  /// Struct Point
   struct Point {
     var x = 0.0, y = 0.0
   }
 
+  /// Struct Size
   struct Size {
     var width = 0.0, height = 0.0
   }
 
+  /// Create other struct with fields struct
   struct Rect {
     var origin: Point = Point()
     var size: Size = Size()
+
+    // computed propertiess
     var center: Point {
       get {
         let centerX: Double = origin.x + (size.width / 2)
@@ -40,8 +44,8 @@ func main() {
   }
 
   // create rect example
-  var square = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10.0, height: 0.0))
-  let initialSquareCenter = square.center
+  var square: Rect = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10.0, height: 0.0))
+  let initialSquareCenter: Point = square.center
   print("initialSquareCenter: \(initialSquareCenter)")
 
   // cambiamos estasdo de propiedad

@@ -7,7 +7,7 @@
 /// escriba el modificador diferido antes de su declaración.
 ///
 /// Básicmaente son propiedades que se generan en memoria hasta
-/// utilizarse en tiempo de ejecución-
+/// utilizarse en tiempo de ejecución.
 ///
 /// Nota:
 /// - Lazy se traduce como perezoso.
@@ -31,15 +31,24 @@ func main() {
   }
 
   class DataManager {
+    // lazy property, se instancia en memoria hasta que
+    // se emplea.
     lazy var importer = DataImporter()
     var data: [String] = []
   }
 
-  // create instanca
+  // create instance
   let manager = DataManager()
   manager.data.append("Some data")
-  manager.data.append("Some more data")
+
+  // add more data
+  for n: Int in 1...10 {
+    manager.data.append("Other some data \(n)")
+  }
+
+  // show manager instance
   print("manager.importer.filename: \(manager.importer.filename)")
+  print("manager.data             : \(manager.data)")
 }
 
 // Run application
