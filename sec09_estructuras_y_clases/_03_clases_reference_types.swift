@@ -23,7 +23,7 @@ func main() {
     var name: String?
   }
 
-  // create instance
+  // create class instance
   let tenEigthty = VideoMode()
   tenEigthty.resolution = Resolution(width: 1080, height: 1024)
   tenEigthty.interlaced = true

@@ -22,13 +22,13 @@ func main() {
 
   // create structure
   struct Resolution {
-    var width = 0.0
-    var height = 0.0
+    var width: Double = 0.0
+    var height: Double = 0.0
   }
 
   // memberwise initializer for struct type
   let vga = Resolution(width: 640, height: 480)
-  print("vga: \(vga)")
+  print("vga: \(vga), with type: \(type(of: vgas))")
 
   // example 02
   enum CompassPoint {
@@ -38,6 +38,7 @@ func main() {
     }
   }
 
+  // enum CompassPoint instances
   var currentDirection = CompassPoint.east
   let rememberDirection = currentDirection
   currentDirection.turnNorth()
